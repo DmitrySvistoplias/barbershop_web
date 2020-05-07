@@ -67,13 +67,15 @@
 
         <section class="gallery">
           <h2>Фотогалерея</h2>
-          <div class="gallery-content">
-            <a href="#"><img src="img\Layer-21.jpg" width="286" height="164" alt="Интерьер"></a>
+          <div class="gallery-container">
+            <div class="gallery-content">
+              <a href="#"><img src="img\Layer-21.jpg" width="286" height="164" alt="Интерьер"></a>
+            </div>
+            <span class="button gallery-button gallery-button-back">Назад</span>
+            <span class="button gallery-button gallery-button-next">Вперед</span>
           </div>
-          <span class="button gallery-button gallery-button-back">Назад</span>
-          <span class="button gallery-button gallery-button-next">Вперед</span>
-        </section>
-      </div>
+          </section>
+        </div>
       
       <div class="index-columns">
         <section class="contacts">
@@ -95,22 +97,32 @@
           <h2>Записаться</h2>
           <p class="appoitment-info">
             УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ
-            <form action="#" method="post">
-              <label for="date">Дата</label>
-              <input type="text" id="date" name="text" value="08.10.2020">
-              <br>
-              <label for="vremia">Время</label>
-              <input type="text" id="vremia" name="text" value="10:00">
-              <br>
-              <label for="login-field">Ваше имя</label>
-              <input type="text" name="login" id="login-field" value="Виталий">
-              <br>
-              <label for="telefon">Телефон</label>
-              <input type="text" name="telefon" id="telefon" value="+7 123 454-55-25">
-              <br>
-              <input type="submit" value="Отправить">
-            </form>
           </p>
+            <form class="appointment-form" action="#" method="post">
+              <p class="appointment-item">
+                <label for="date">Дата</label>
+                <input type="text" id="date" name="text" value="08.10.2020">
+              </p>
+              
+              <p class="appointment-item">
+                <label for="vremia">Время</label>
+                <input type="text" id="vremia" name="text" value="10:00">
+              </p>
+              
+              <p class="appointment-item">
+                <label for="login-field">Ваше имя</label>
+                <input type="text" name="login" id="login-field" value="Виталий">
+              </p>
+              
+              <p class="appointment-item">
+                <label for="telefon">Телефон</label>
+                <input type="text" name="telefon" id="telefon" value="+7 123 454-55-25">
+              </p>
+              
+              <button class="button" type="submit">Отправить
+              </button> 
+            </form>
+          
           <!--Здесь будет форма-->
           
         </section>

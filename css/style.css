@@ -24,7 +24,11 @@ a {
 }
 
 .button {
+    display: inline-block;
+
     font: inherit;
+    padding: 10px 30px;
+    margin-right: 16px;
 
     text-align: center;
     color: #ffffff;
@@ -35,6 +39,21 @@ a {
     border: none;
 }
 
+.gallery-button {
+    position: absolute;
+    bottom: 0px;
+    width: 80px;
+    margin-right: 0px;
+}
+
+.gallery-button-back {
+    left: 0px;
+}
+
+.gallery-button-next {
+    right: 0px;
+}
+
 .button:hover,
 .button:active,
 .button:focus {
@@ -43,13 +62,15 @@ a {
 
 .main-navigation-wrapper {
     width: 100%;
+    height: 60px;
     margin-bottom: 60px;
     background-color: #000000;
 }
 
 .main-navigation-wrapper .conteiner {
-display: flex;
-justify-content: space-between;
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
 }
 
 .conteiner {
@@ -76,10 +97,11 @@ justify-content: space-between;
 .site-navigation {
     display: flex;
     width: 620px;
-    height: 40px;
+    height: 60px;
     list-style: none;
     margin: 0px;
     padding: 0px;
+    align-items: center;
 }
 
 .user-navigation {
@@ -98,6 +120,32 @@ justify-content: space-between;
 .site-navigation a,
 .user-navigation a {
     color: #ffffff;
+}
+
+.user-navigation .login-link {
+    position: relative;
+    padding-left: 50px;
+}
+
+.user-navigation .login-link::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 18px;
+
+    left: 25px;
+    top: 2px;
+    background-image: url("../img/login.svg");
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+
+    opacity: 0.3;
+}
+
+.login-link:hover::before,
+.login-link:focus::before,
+.login-link:active::before {
+    opacity: 1;
 }
 
 .site-navigation a:hover,
@@ -121,8 +169,27 @@ justify-content: space-between;
 }
 
 .feature-item h3 {
+    position: relative;
     font-size: 30px;
     line-height: 42px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.feature-item h3::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+
+    left: 50%;
+    bottom: -30px;
+    margin-left: -10px;
+
+    transform: rotate(45deg);
+
+    background-color: rgb(252, 252, 252);
+
 }
 
 .features {
@@ -161,6 +228,7 @@ justify-content: space-between;
 
 .news-list {
     list-style: none;
+    padding-left: 0px;
 }
 
 .news-item time{
@@ -170,6 +238,31 @@ justify-content: space-between;
 .gallery-content {
     background-color: #cccccc;
     border: 7px solid #ffffff;
+    height: 164px;
+    width: 286px;
+}
+
+.gallery-container {
+    height: 268px;
+    position: relative;
+    padding: 0px 0px;
+}
+
+.appointment-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.appointment-item {
+    width: 140px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.appointment-item label {
+    margin-bottom: 9px;
+    margin-left: 15px;
 }
 
 form input {
