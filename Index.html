@@ -148,23 +148,25 @@
      </div>
     </footer>
 
-    <section class="modal modal-login">
+    <div class="modal-shod visually-hidden"></div>
+
+    <section class="modal modal-login visually-hidden">
       <h2>Личный кабинет</h2>
       <p>Введите пожалуйста свой логин и пароль.</p>
       <form action="#" method="post">
         <label for="log-user">логин</label>
-        <input type="text" id="log-user" name="text" value="Логин">
+        <input type="text" id="log-user" name="login">
         <br>
-        <label for="pass-user">логин</label>
-        <input type="password" id="pass-user" name="text" value="Пароль">
+        <label for="pass-user">пароль</label>
+        <input type="password" id="pass-user" name="password">
         <br>
         <input type="checkbox" id="checkbox-modal-login">
         <label for="checkbox-modal-login">Запомните меня</label>
-        <a href="#">Я звбыл пароль</a>
+        <a href="#">Я забыл пароль</a>
         <br>
         <input class="button-voiti" type="submit" value="Войти">
         <br>
-        <button>Закрыть</button>
+        <button class="button-modal-cloys">Закрыть</button>
       </form>
     </section>
 
@@ -173,6 +175,7 @@
       <img src="img\map-1.jpg" width="766" height="560" alt="Карта">
       <span class="modal-close">x</span>
     </section>
+    <script src="js/app.js"></script>
   </body>
   
 </html>
